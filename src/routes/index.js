@@ -38,6 +38,22 @@ router.get('/index2', (req, res) =>{
   }
 });
 
+router.post('/nuevoInmueble', async (req, res) =>{
+  let { nombre, tipo_compra, ubicacion, latitud, longitud, precio, imagen, recamaras } = req.body;
+  let data ={
+    nombre,
+    tipo_compra,
+    ubicacion,
+    latitud,
+    longitud,
+    precio,
+    imagenes: imagen,
+    recamaras_no: recamaras
+  }
+  await pool.query('INSERT INTO inmueble set ?', [data] );
+  res.redirect('/');
+});
+
 
 /*
  * Páginas de signin/signup
