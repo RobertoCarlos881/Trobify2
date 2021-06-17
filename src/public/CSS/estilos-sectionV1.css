@@ -1,0 +1,129 @@
+.section1{
+    /* background-color: green; */
+    padding-top: 59px;
+}
+
+.section1 img{
+    width: 100%;
+}
+
+
+
+.s1-container{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+    width: 70%; 
+    padding: 10px;
+    margin-left: 15%; 
+    margin-top: 150px; 
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.s1-container-logo{
+    /* background-color: red; */
+    width: 30%;
+    text-align: right;
+   
+}
+.s1-container-logo img{
+    width: 143px;
+    height: 30px;
+    margin-top: 5px;
+
+}
+
+.s1-container-slogan{
+    width: 50%;
+    color: white;
+    font-family: rale;
+    font-size: 35px;
+    /* padding-top: px; */
+    text-align: center;
+}
+
+.s1-container-slogan p{
+    /* background-color: teal; */
+    margin:auto;
+}
+
+.s1-form{
+    width: 100%;
+    margin: 15px;
+    /* background-color: white; */
+    font-family: rale;
+    font-size: 25px;
+    border-radius: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+
+.s1-select {
+    /*background-color: rgb(79, 206, 206);*/
+    background-color: white;
+    font-family: rale;
+    font-size: 20px;   
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 5px;
+    /*outline-color: rgb(0, 109, 109);;*/
+}
+
+.s1-select:hover{
+    background-color: #1ca049;   
+}
+
+.s1-btn{
+    background-color:  #90d113;
+    font-family: rale;
+    font-size: 20px;  
+    color: white;
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.s1-btn:hover{
+    background-color:  rgba(106, 239, 17, 0.616);
+    transition: 0.5s;
+}
+
+@font-face{
+    font-family: rale;
+    src: url(../letra/Raleway-Regular.ttf);
+} 
+
+@media screen and (max-width: 900px){
+    .s1-container div{
+        width: 100%;
+        
+    }
+    .s1-container-logo{
+        text-align: center;
+    } 
+    .s1-container{
+        margin-top: 50px;
+    }
+    .s1-select{
+        width: 100%;
+    }
+    
+    
+}
+
+@media screen and (max-width: 680px){
+    .section1 #depa{
+        width: 100%;
+        height: 500px;
+    }
+   
+}
+
+
+

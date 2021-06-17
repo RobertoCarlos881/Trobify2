@@ -1,0 +1,21 @@
+
+.s1-container{
+    position: relative;
+    margin-bottom: 15px;
+    margin-top: 50px; 
+    background-color: rgba(0, 0, 0, 0.678);
+}
+
+.container-r{
+    font-family: rale;
+    /*background-color: red;*/
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@font-face{
+    font-family: rale;
+    src: url(../letra/Raleway-Regular.ttf);
+}

@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?vv90ku');
+  src:  url('fonts/icomoon.eot?vv90ku#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?vv90ku') format('truetype'),
+    url('fonts/icomoon.woff?vv90ku') format('woff'),
+    url('fonts/icomoon.svg?vv90ku#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bookmark:before {
+  content: "\e900";
+}
+.icon-calendar:before {
+  content: "\e901";
+}
+.icon-envelope:before {
+  content: "\e902";
+}
+.icon-layers:before {
+  content: "\e903";
+}
+.icon-list-bullet:before {
+  content: "\e904";
+}
+.icon-notifications:before {
+  content: "\e905";
+}
+.icon-notifications-outline:before {
+  content: "\e906";
+}
+.icon-star-full:before {
+  content: "\e907";
+}
+.icon-store-front:before {
+  content: "\e908";
+}
+.icon-tag:before {
+  content: "\e909";
+}
+.icon-user:before {
+  content: "\e90a";
+}
+.icon-user-group:before {
+  content: "\e90b";
+}
+.icon-user-solid-circle:before {
+  content: "\e90c";
+}
+.icon-view-list:before {
+  content: "\e90d";
+}
+.icon-view-tile:before {
+  content: "\e90e";
+}

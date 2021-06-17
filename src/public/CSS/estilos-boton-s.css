@@ -1,0 +1,85 @@
+.btn-s{
+    margin: 15px 120px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #636b6f;
+    padding: 10px;
+    padding-top: 10;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgba(175, 5, 5, 0.774);
+    border-radius: 3px;
+    outline: none;
+}
+
+.btn-s:hover{
+    border: none;
+    background-color: rgb(224, 4, 4);
+    color: white;
+    transition-delay: 0.6s;
+    
+    
+}
+
+.btn-s span{
+    position: absolute;
+    display: block;
+}
+
+.btn-s span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f00303);
+} 
+
+.btn-s:hover span:nth-child(1){
+    left: 100%;
+    transition: 0.6s;
+}
+
+.btn-s span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(-90deg, transparent, #2195f3);
+} 
+
+.btn-s:hover span:nth-child(3){
+    right: 100%;
+    transition: 0.6s;
+    
+}
+
+.btn-s span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #f00303);
+} 
+
+.btn-s:hover span:nth-child(2){
+    top: 100%;
+    transition: 0.6s;
+    transition-delay: 0.25s;
+}
+
+.btn-s span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, #2195f3);
+} 
+
+.btn-s:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 0.6s;
+    transition-delay: 0.25s;
+}

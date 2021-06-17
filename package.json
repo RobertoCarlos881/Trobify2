@@ -1,0 +1,39 @@
+{
+  "name": "trobify",
+  "version": "1.0.0",
+  "description": "Proyecto de SE",
+  "scripts": {
+    "dev": "parcel index.html -p 3000",
+    "start": "nodemon ./src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alejandrow1092/Trobify-SoftwareE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alejandrow1092/Trobify-SoftwareE/issues"
+  },
+  "homepage": "https://github.com/Alejandrow1092/Trobify-SoftwareE#readme",
+  "keywords": [],
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "express-mysql-session": "^2.1.6",
+    "express-session": "^1.17.2",
+    "flash": "^1.1.0",
+    "handlebars": "^4.7.7",
+    "mysql": "^2.18.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "parcel": "^2.0.0-nightly.720"
+  }
+}

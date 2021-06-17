@@ -1,0 +1,88 @@
+.form-lr{
+    position: absolute ;
+    z-index: 15;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.795);
+    display: none;
+    
+}
+
+
+
+.form-g{
+    /*display: none;*/
+    width: 350px;
+    height: 370px;
+    margin: auto;
+    margin-top: 100px;
+    /*background-color: rgba(0, 0, 0, 0.767);*/
+    border: 0.5px solid grey;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.514);
+    font-family: rale;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.form-r{
+    display: none;
+}
+.form-l{
+    display: none;
+}
+
+ .form-g h1{
+     text-align: center;
+     font-size: 35px;
+     margin-bottom: 5px;
+ }
+.form-g input,.form-g select{
+   /* margin-top: 5px;*/
+    width: 100%;
+    background-color:  rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 2px solid rgba(175, 5, 5, 0.774);
+    font-size: 20px;
+    padding-top: 5px;
+    color: white;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    outline: none;
+    
+}
+
+.form-g select:hover{
+    background-color:  rgba(0, 0, 0, 0.507);
+}
+
+.btn-c{
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.514);
+    margin:15px;
+    font-size:30px;
+    border: none;
+    font-family: rale;
+    padding: 5px;
+    float: right;
+}
+
+.btn-c:hover{
+    color:  rgba(175, 5, 5, 0.774);
+}
+
+@font-face{
+    font-family: rale;
+    src: url(../letra/Raleway-Regular.ttf);
+} 
+
+
+@media screen and (max-width: 400px){
+    .form-g{
+        width: 80%;
+    }
+
+    select{
+        box-sizing: border-box;
+    }
+}

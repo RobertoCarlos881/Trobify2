@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f9f9f9;
+}
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    /*position: absolute;*/
+}
+
+header nav{
+    background-color:white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+}
+.general-list ul{
+    overflow: hidden;
+    list-style: none;
+}
+
+.general-list ul li{
+    float: right;
+}
+
+.general-list ul li a{
+    color: grey;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    font-family: rale;
+    font-weight: bold;
+}
+
+.general-list ul li span{
+    margin-right: 7px;
+
+}
+.general-list ul li #sign-up:hover{
+    background-color: rgba(107, 239, 17);
+    color: white;
+    transition: 0.5s;
+}
+#sign-up{
+    border: 1px solid rgba(107, 239, 17);
+    border-radius: 15px;
+}
+.general-list ul li a:hover{
+    color: rgba(107, 239, 17, 1);
+}
+.menu-bar{
+    display: none;
+}
+
+.logo{
+    display: block;
+    /*background: blueviolet;*/
+    float: left; 
+    margin-top: 8px;
+    padding-left: 25px;
+}
+.logo a{ 
+    font-size: 35px;
+   font-family: rale;
+    text-decoration: none;
+    color: white;   
+  
+}
+
+
+
+@font-face{
+    font-family: rale;
+    src: url(../assets/letra/Raleway-Regular.ttf);
+} 
+
+
+
+@media screen and (max-width: 900px){
+    
+    .general-list{
+        
+        width: 60%;
+        height: 100%;
+         position: fixed;
+        margin-left: -60%;
+        transition: all 0.5s;
+    }
+    #login{
+        border-radius: 0px;
+        border: none;
+    }
+    .general-list ul li{
+        float: none;
+        display: block;
+        border-bottom: 1px solid rgba(107, 239, 17, 1);;
+    }
+    .general-list ul li:hover{
+        background-color: rgba(128, 128, 128, 0.4);
+        transition: 0.3s;
+    }
+    
+    .general-list ul li a:hover{
+        color: black;
+
+    }
+    .logo{
+        display: none;
+    }
+    .menu-bar{
+        display: block;
+        width: 100%;
+        background-color: white;  
+    }
+
+    .menu-bar .menu-logo{
+        display: block;
+        padding: 13px;
+        color: white;
+        text-decoration: none;
+        font-family: rale;
+        font-size: 30px;
+    }
+
+    
+    .menu-bar span{
+        color: black;
+    }
+
+    .menu-bar span:hover{
+        color: rgba(107, 239, 17, 1);
+        transition: 0.3s;
+    }
+
+    
+    
+    .menu-logo span{
+        float: right;
+    }
+    .nav-display{
+        margin: 0;
+        
+        /*transition: all 0.5s;*/
+    }
+
+    .nav-ocul{
+        margin-left: -60%;
+        /*transition: all 0.5s;*/
+    }
+
+}

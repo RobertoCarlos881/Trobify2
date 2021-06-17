@@ -1,0 +1,99 @@
+
+  
+  .container-p{
+    margin: auto;
+    background-color: white;
+    width: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.541);
+    border-radius: 3px;
+    margin-bottom: 15px;
+  }
+  
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  ul.slider{
+    position: relative;
+    width: 300px;
+    height: 200px;
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#fff;
+  }
+  
+  ul.slider li img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1; /*Mostramos el primer <li>*/
+  }
+  
+  ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  
+  .menu{
+  /*  background-color: blue;*/
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.541);
+    padding: 5px;	
+  }
+  
+  .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+  }
+
+  .data-p{
+    /*  background-color: brown;*/
+      padding: 5px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.541);
+  }
+
+  .data-d{
+  /*    background-color: cadetblue;*/
+      padding: 5px;
+      height: 120px;
+      font-size: 15px;
+  }
+
+  .btn-c{
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #4ad200;  
+      font-size: 20px;
+      color: #4ad200;  
+      background-color: white;
+  }
+
+  .btn-c:hover{
+    background-color: #4ad200;  
+    color: white;
+    transition: 0.7s;
+  }
