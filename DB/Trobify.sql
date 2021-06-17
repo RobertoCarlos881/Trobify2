@@ -14,12 +14,11 @@ create table inmueble (
     recamaras_no INTEGER
 );
 
-
+ alter table inmueble
+    add primary key(id);
 ALTER TABLE inmueble
     MODIFY id INT(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 1;
-    alter table inmueble
-    add primary key(id);
-
+   
     insert into inmueble (nombre, tipo_compra, ubicacion, latitud, longitud, precio, imagenes, recamaras_no) values(
         'La casa del chuz',
         'venta',
