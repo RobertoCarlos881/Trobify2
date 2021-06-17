@@ -14,12 +14,13 @@ const { isLoggedIn , isNotLoggedIn } = require('../lib/auth');
  */
 
 //Página principal
-router.get('/', (req, res) =>{
+router.get('/', async (req, res) =>{
   if(req.isAuthenticated()){ //Si ya esta logeado que lo lleve a home
     res.redirect('/index2');
   }
   else{ //Si no a la página principal
-    res.render('index');
+    const inmuebles = await pool.query('SELECT * FROM inmueble');
+    res.render('index',{inmuebles});
   }
 });
 

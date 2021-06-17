@@ -18,14 +18,13 @@ html(lang='en')
         link(rel='stylesheet' href='css/fl-bigmug-line.css')
         link(rel='stylesheet' href='css/aos.css')
         link(rel='stylesheet' href='css/style.css')
-    body
         script(type='text/javascript').
-          async function getInmueble(){
+          async function getInmueble() {
             let response = await fetch('http://localhost:3000/api/inmuebles');
             let data = await response.json();
             return data;
           }
-          var prueba = "xd"
+          var element = "xd"
           getInmueble().then(data => {
             //console.log("Muebles");
             //console.log(data);
@@ -33,20 +32,11 @@ html(lang='en')
               console.log(element);
               createNewCard(element);
             });
+            element = data;
           });
-          function createNewCard(element){
-            var div1 = document.createElement("div");
-            var div2 = document.createElement("div");
-            var ancla = document.createElement("a");
-            var div3 = document.createElement("div");
-            var span = document.createElement("span");
-            var img = document.createElement("img");
-            var div4 = document.createElement("div");
-            var ancla2 = document.createElement("a");
-            var span2 = document.createElement("span");
-            var subtitulo = document.createElement("h2");
-            var ancla3 = document.createElement("a");
+          function createNewCard(element) {
           }
+    body
         .site-loader
         .site-wrap
             .site-mobile-menu
@@ -104,271 +94,38 @@ html(lang='en')
         .site-section.site-section-sm.bg-light
             .container
                 .row.mb-5
-                    .col-md-6.col-lg-4.mb-4
-                        .property-entry.h-100
-                            a.property-thumbnail(href='login.html')
-                                .offer-type-wrap
-                                    span.offer-type.bg-danger Venta
-                                    span.offer-type.bg-success Renta
-                                img.img-fluid(src='images/img_1.jpg' alt='Image')
-                            .p-4.property-body
-                                a.property-favorite(href='#')
-                                    span.icon-heart-o
-                                h2.property-title
-                                    a(href='property-details.html') Av. Teotihuacán, No.-B
-                                span.property-location.d-block.mb-3
-                                    span.property-icon.icon-room
-                                    |  Av. Teotihuacán, No.-B, Atlanta, Cuautitlán Izcalli
-                                strong.property-price.text-primary.mb-3.d-block.text-success $2,265,500
-                                ul.property-specs-wrap.mb-3.mb-lg-0
-                                    li
-                                        span.property-specs Recamaras
-                                        span.property-specs-number
-                                            | 3
-                                            sup +
-                                    li
-                                        span.property-specs
-                                            | Area (m
-                                            sup 2
-                                            | )
-                                        span.property-specs-number 81
-                    .col-md-6.col-lg-4.mb-4
-                        .property-entry.h-100
-                            a.property-thumbnail(href='login.html')
-                                .offer-type-wrap
-                                    span.offer-type.bg-danger Venta
-                                img.img-fluid(src='images/img_2.jpg' alt='Image')
-                            .p-4.property-body
-                                a.property-favorite.active(href='#')
-                                    span.icon-heart-o
-                                h2.property-title
-                                    a(href='property-details.html') Santa Guadalupe
-                                span.property-location.d-block.mb-3
-                                    span.property-icon.icon-room
-                                    |  Santa Guadalupe, Fraccionamiento San Javier, San Miguel de Allende
-                                strong.property-price.text-primary.mb-3.d-block.text-success $2,550,000
-                                ul.property-specs-wrap.mb-3.mb-lg-0
-                                    li
-                                        span.property-specs Recamaras
-                                        span.property-specs-number
-                                            | 3
-                                            sup +
-                                    li
-                                        span.property-specs Baños
-                                        span.property-specs-number 3
-                                    li
-                                        span.property-specs
-                                            | Area (m
-                                            sup 2
-                                            | )
-                                        span.property-specs-number 90
-                    .col-md-6.col-lg-4.mb-4
-                        .property-entry.h-100
-                            a.property-thumbnail(href='login.html')
-                                .offer-type-wrap
-                                    span.offer-type.bg-info Alquiler
-                                img.img-fluid(src='images/img_3.jpg' alt='Image')
-                            .p-4.property-body
-                                a.property-favorite(href='#')
-                                    span.icon-heart-o
-                                h2.property-title
-                                    a(href='property-details.html') Avenida Carrasca
-                                span.property-location.d-block.mb-3
-                                    span.property-icon.icon-room
-                                    |  Avenida Carrasca, Privadas del Pedregal, San Luis Potosí
-                                strong.property-price.text-primary.mb-3.d-block.text-success $15,500 /m
-                                ul.property-specs-wrap.mb-3.mb-lg-0
-                                    li
-                                        span.property-specs Recamaras
-                                        span.property-specs-number
-                                            | 4
-                                            sup +
-                                    li
-                                        span.property-specs Baños
-                                        span.property-specs-number 3
-                                    li
-                                        span.property-specs
-                                            | Area (m
-                                            sup 2
-                                            | )
-                                        span.property-specs-number 261
-                    .col-md-6.col-lg-4.mb-4
-                        .property-entry.h-100
-                            a.property-thumbnail(href='login.html')
-                                .offer-type-wrap
-                                    span.offer-type.bg-danger Venta
-                                    span.offer-type.bg-success Renta
-                                img.img-fluid(src='images/img_4.jpg' alt='Image')
-                            .p-4.property-body
-                                a.property-favorite(href='#')
-                                    span.icon-heart-o
-                                h2.property-title
-                                    a(href='property-details.html') Cumbres San Agustín 2do. Sector
-                                span.property-location.d-block.mb-3
-                                    span.property-icon.icon-room
-                                    |  Cumbres San Agustín 2do. Sector, Cumbres, Monterrey
-                                strong.property-price.text-primary.mb-3.d-block.text-success $2,330,000
-                                ul.property-specs-wrap.mb-3.mb-lg-0
-                                    li
-                                        span.property-specs Recamaras
-                                        span.property-specs-number
-                                            | 3
-                                            sup +
-                                    li
-                                        span.property-specs Baños
-                                        span.property-specs-number 2
-                                    li
-                                        span.property-specs
-                                            | Area (m
-                                            sup 2
-                                            | )
-                                        span.property-specs-number 180
-                    .col-md-6.col-lg-4.mb-4
-                        .property-entry.h-100
-                            a.property-thumbnail(href='login.html')
-                                .offer-type-wrap
-                                    span.offer-type.bg-danger Venta
-                                    span.offer-type.bg-success Renta
-                                img.img-fluid(src='images/img_5.jpg' alt='Image')
-                            .p-4.property-body
-                                a.property-favorite(href='#')
-                                    span.icon-heart-o
-                                h2.property-title
-                                    a(href='property-details.html')  Arcos de San Miguel
-                                span.property-location.d-block.mb-3
-                                    span.property-icon.icon-room
-                                    |  Arcos de San Miguel, San Miguel de Allende
-                                strong.property-price.text-primary.mb-3.d-block.text-success $4,600,000
-                                ul.property-specs-wrap.mb-3.mb-lg-0
-                                    li
-                                        span.property-specs Recamaras
-                                        span.property-specs-number 3
-                                    li
-                                        span.property-specs Baños
-                                        span.property-specs-number 2
-                                    li
-                                        span.property-specs
-                                            | Area (m
-                                            sup 2
-                                            | )
-                                        span.property-specs-number 191
-                    .col-md-6.col-lg-4.mb-4
-                        .property-entry.h-100
-                            a.property-thumbnail(href='login.html')
-                                .offer-type-wrap
-                                    span.offer-type.bg-info Alquiler
-                                img.img-fluid(src='images/img_6.jpg' alt='Image')
-                            .p-4.property-body
-                                a.property-favorite(href='#')
-                                    span.icon-heart-o
-                                h2.property-title
-                                    a(href='property-details.html') Boulevard Los Viñedos
-                                span.property-location.d-block.mb-3
-                                    span.property-icon.icon-room
-                                    |  Boulevard Los Viñedos s/n, Santa María Matílde, Pachuca
-                                strong.property-price.text-primary.mb-3.d-block.text-success $20,000 /m
-                                ul.property-specs-wrap.mb-3.mb-lg-0
-                                    li
-                                        span.property-specs Recamaras
-                                        span.property-specs-number 2
-                                    li
-                                        span.property-specs Baños
-                                        span.property-specs-number 2
-                                    li
-                                        span.property-specs
-                                            | Area (m
-                                            sup 2
-                                            | )
-                                        span.property-specs-number 52
-                    .col-md-6.col-lg-4.mb-4
-                        .property-entry.h-100
-                            a.property-thumbnail(href='login.html')
-                                .offer-type-wrap
-                                    span.offer-type.bg-danger Venta
-                                img.img-fluid(src='images/img_7.jpg' alt='Image')
-                            .p-4.property-body
-                                a.property-favorite(href='#')
-                                    span.icon-heart-o
-                                h2.property-title
-                                    a(href='property-details.html') CALLE LA SOLEDAD
-                                span.property-location.d-block.mb-3
-                                    span.property-icon.icon-room
-                                    |  CALLE LA SOLEDAD, Fuentes de Satélite, Atizapán de Zaragoza
-                                strong.property-price.text-primary.mb-3.d-block.text-success $7,000,000
-                                ul.property-specs-wrap.mb-3.mb-lg-0
-                                    li
-                                        span.property-specs Recamaras
-                                        span.property-specs-number
-                                            | 3
-                                            sup +
-                                    li
-                                        span.property-specs Baños
-                                        span.property-specs-number 3
-                                    li
-                                        span.property-specs
-                                            | Area (m
-                                            sup 2
-                                            | )
-                                        span.property-specs-number 326
-                    .col-md-6.col-lg-4.mb-4
-                        .property-entry.h-100
-                            a.property-thumbnail(href='login.html')
-                                .offer-type-wrap
-                                    span.offer-type.bg-danger Venta
-                                    span.offer-type.bg-success Renta
-                                img.img-fluid(src='images/img_8.jpg' alt='Image')
-                            .p-4.property-body
-                                a.property-favorite(href='#')
-                                    span.icon-heart-o
-                                h2.property-title
-                                    a(href='property-details.html') Amorada
-                                span.property-location.d-block.mb-3
-                                    span.property-icon.icon-room
-                                    |  Amorada, Los Rodriguez, Santiago
-                                strong.property-price.text-primary.mb-3.d-block.text-success $5,200,000
-                                ul.property-specs-wrap.mb-3.mb-lg-0
-                                    li
-                                        span.property-specs Recamaras
-                                        span.property-specs-number
-                                            | 3
-                                            sup +
-                                    li
-                                        span.property-specs Baños
-                                        span.property-specs-number 3
-                                    li
-                                        span.property-specs
-                                            | Area (m
-                                            sup 2
-                                            | )
-                                        span.property-specs-number 303
-                    .col-md-6.col-lg-4.mb-4
-                        .property-entry.h-100
-                            a.property-thumbnail(href='login.html')
-                                .offer-type-wrap
-                                    span.offer-type.bg-info Alquiler
-                                img.img-fluid(src='images/img_9.jpg' alt='Image')
-                            .p-4.property-body
-                                a.property-favorite(href='#')
-                                    span.icon-heart-o
-                                h2.property-title
-                                    a(href='property-details.html') Fracc Santa Martha
-                                span.property-location.d-block.mb-3
-                                    span.property-icon.icon-room
-                                    |  Fracc Santa Martha, Fraccionamiento Santa Martha, San Pedro Cholula
-                                strong.property-price.text-primary.mb-3.d-block.text-success $16,500 /m
-                                ul.property-specs-wrap.mb-3.mb-lg-0
-                                    li
-                                        span.property-specs Recamaras
-                                        span.property-specs-number 3
-                                    li
-                                        span.property-specs Baños
-                                        span.property-specs-number 2
-                                    li
-                                        span.property-specs
-                                            | Area (m
-                                            sup 2
-                                            | )
-                                        span.property-specs-number 200
+                    each val in inmuebles
+                        .col-md-6.col-lg-4.mb-4
+                            .property-entry.h-100
+                                a.property-thumbnail(href='login.html')
+                                    .offer-type-wrap
+                                        if val.tipo_compra === "venta"
+                                            span.offer-type.bg-danger #{val.tipo_compra}
+                                        else if val.tipo_compra === "renta"
+                                            span.offer-type.bg-success #{val.tipo_compra}
+                                    - var ruta = 'images/' + val.imagenes
+                                    img.img-fluid(src=ruta alt='Image')
+                                .p-4.property-body
+                                    a.property-favorite(href='#')
+                                        span.icon-heart-o
+                                    h2.property-title
+                                        a(href='property-details.html') #{val.nombre}
+                                    span.property-location.d-block.mb-3
+                                        span.property-icon.icon-room
+                                        |  #{val.ubicacion}
+                                    strong.property-price.text-primary.mb-3.d-block.text-success $#{val.precio}
+                                    ul.property-specs-wrap.mb-3.mb-lg-0
+                                        li
+                                            span.property-specs Recamaras
+                                            span.property-specs-number
+                                                | #{val.recamaras_no}
+                                                sup +
+                                        li
+                                            span.property-specs
+                                                | Area (m
+                                                sup 2
+                                                | )
+                                            span.property-specs-number 81
         .site-section
             .container
                 .row.justify-content-center
